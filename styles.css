@@ -8,25 +8,31 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 img {
-	max-width:100%;
+	width:150px;
+	border:solid white 5px;
 }
 
 /************* End CSS RESET **************/
 
 body {
-	background:url(images/paper.png);
-	color:#424242;
-	font-family: 'Source Sans Pro', sans-serif;
+	background:url(images/bg.jpg) no-repeat;
+	color:black;
+	font-family: 'Montserrat', sans-serif;
 	padding:30px 0;
+	background-size: cover;
 }
 
 #page {
-	width:980px;
+		width:980px;
 	margin:auto;
+	background:rgba(255,255,113, 0.66);
+	padding:50px;
+
+
 }
 
 header {
-	border-bottom: 3px solid #424242;
+	border-bottom: 1px dashed #424242;
 	padding-bottom:20px;
 }
 
@@ -40,7 +46,7 @@ section {
 }
 
 footer {
-	border-top: 3px solid #424242;
+	border-top: 1px dashed #424242;
 	padding-top:20px;
 }
 
@@ -64,8 +70,8 @@ footer {
 /************ typography *************/
 
 h1, h2, h3 {
-	font-family: 'Bitter', serif;
 	margin-bottom:.5em;
+	font-weight: 700;
 }
 
 h1 {
