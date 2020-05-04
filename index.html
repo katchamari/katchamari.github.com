@@ -1,66 +1,191 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>My Github Homepage</title>
+    <meta charset="UTF-8">
+    <title>Momo Roth- Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet">
-
-<!-- Needed for mobile devices to not zoom out automatically-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!-- Needed for mobile devices to not zoom out automatically-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
 
-	<div id="page">
-    
-   	  <header>
-        
-        	<h1>Momo Roth</h1>
-            <h2>My Github Homepage</h2>
-        
-        </header>
-        
-        <section>
-        	<article id="about">
-            	<h1>About</h1>
-                <p><img src="images/me.jpg" alt="photo" class="alignleft">Hey! My name is Momo and I'm an aspiring web developer at Ameripcan River College.</p>
-                <p>I am currently on track to getting my Associate of Arts in Art New Media and plan to try out Computer Science on the road to software development.</p>
-                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce  kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus  winter purslane kale. Celery potato scallion desert raisin horseradish  spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo  shoot green bean swiss chard seakale pumpkin onion chickpea gram corn  pea.</p>
-            </article>
-            
-            <article id="projects">
-            	<h2>Projects</h2>
-                <ol>
-                	<li>Here is an important project</li>
-                    <li>Here is an important project</li>
-                    <li>Here is an important project</li>
-                    <li>Here is an important project</li>
-                    <li>Here is an important project</li>
+
+    <nav class="fixed-top navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="works">
+        <div class="container">
+
+            <h2>Explore my projects</h2>
+
+            <div class="mobile-works">
+                <div class="row">
+                    <div class="col col-9 m-auto">
+                        <div class="card">
+                            <img src="images/mobile1.jpg" class="card-img-top" alt="mercury airlines preview thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title">Mercury Airlines</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-9 m-auto">
+                        <div class="card">
+                            <img src="images/mobile2.jpg" class="card-img-top" alt="i do preview thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title">I Do</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-9 m-auto">
+                        <div class="card">
+                            <img src="images/mobile3.jpg" class="card-img-top" alt="sprinkle preview thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title">sprinkle</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-9 m-auto">
+                        <div class="card">
+                            <img src="images/mobile4.jpg" class="card-img-top" alt="gus and eddy preview thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title">Gus &amp; Eddy</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselExampleCaptions" class="hidden-on-mobile carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                 </ol>
-            
-            	<h2>Skills</h2>
-                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.</p>
-                <ul>
-                	<li>HTML</li>
-                    <li>CSS</li>
-                    <li>Special Skill</li>
-                    <li>Special Skill</li>
-                </ul>
-            </article>
-        
-        </section>
-        
-        <footer>
-       	  <h1>Contact</h1>
-            <p><strong>Phone</strong> 209.327.8238 <br>
-			   <strong>Email</strong> &#107;&#097;&#116;&#099;&#104;&#097;&#109;&#097;&#114;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;<br>
-			   <strong>Website</strong> <a href="http://somewhere.com">http://somewhere.com</a></p>
-      </footer>
-    
-    </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="image-container w-100">
+                            <img class="image" src="images/1airline.png"
+                                alt="mercury airlines website displayed on screens" class="d-block w-100">
+                            <div class="middle">
+                                <div class="text">
+                                    <h5>Mercury Airlines</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, qui illo? Maxime
+                                        minima dicta explicabo veritatis provident ab? Quia, tenetur. Lorem ipsum dolor
+                                        sit amet.</p>
+                                    <a href="#" class="btn">See This Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="image-container w-100">
+                            <img class="image" src="images/2wedding.png" alt="i do website displayed on screens"
+                            class="d-block w-100">
+                            <div class="middle">
+                                <div class="text">
+                                    <h5>I Do</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, qui illo? Maxime minima dicta explicabo veritatis provident ab? Quia, tenetur. Lorem ipsum dolor sit amet.</p>
+                                    <a href="#" class="btn">See This Project</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="image-container w-100">
+                            <img class="image" src="images/3sprinkle.png" alt="sprinkle website displayed on screens"
+                            class="d-block w-100">
+                            <div class="middle">
+                                <div class="text">
+                                    <h5>sprinkle</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, qui illo? Maxime minima dicta explicabo veritatis provident ab? Quia, tenetur. Lorem ipsum dolor sit amet.</p>
+                                    <a href="#" class="btn">See This Project</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="image-container w-100">
+                            <img class="image" src="images/4gusandeddy.png" alt="gus and eddy website displayed on screens"
+                            class="d-block w-100">
+                            <div class="middle">
+                                <div class="text">
+                                    <h5>Gus &amp; Eddy</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, qui illo? Maxime minima dicta explicabo veritatis provident ab? Quia, tenetur. Lorem ipsum dolor sit amet.</p>
+                                    <a href="#" class="btn">See This Project</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

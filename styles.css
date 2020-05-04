@@ -1,134 +1,165 @@
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
 * {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
-
-img {
-	width:150px;
-	border:solid white 5px;
-}
-
-/************* End CSS RESET **************/
 
 body {
-	background:url(images/bg.jpg) no-repeat;
-	color:black;
-	font-family: 'Montserrat', sans-serif;
-	padding:30px 0;
-	background-size: cover;
+	font-family: 'Montserrat';
 }
 
-#page {
-		width:980px;
-	margin:auto;
-	background:rgba(255,255,113, 0.66);
-	padding:50px;
-
-
-}
-
-header {
-	border-bottom: 1px dashed #424242;
-	padding-bottom:20px;
-}
-
-header, footer {
-	margin: 0 10px;
-	overflow:hidden;
-}
 section {
-	padding:20px 0;
-	overflow:hidden;
+	padding-top: 100px;
+	-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.34);
+	-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.34);
+	box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.34);
+	position: relative;
 }
 
-footer {
-	border-top: 1px dashed #424242;
-	padding-top:20px;
+section:nth-of-type(even) {
+	background: url("images/bg.png");
+	background-repeat: repeat;
+	background-size: 300px;
 }
 
-#about {
-	width:66.6666%;
-	padding:10px;
-	float:left;
+section:nth-of-type(1) {
+	z-index: 600;
 }
 
-#projects {
-	width: 33.33%;
-	float:left;
-	padding:10px;
+h2 {
+	font-weight: 800;
+	color: #74D187;
+	font-size: 40px;
+	text-align: center;
 }
 
-.alignleft {
-	float:left;
-	margin: 0 10px 5px 0;
+/*** NAV ****/
+
+nav img {
+	width: 200px;
 }
 
-/************ typography *************/
-
-h1, h2, h3 {
-	margin-bottom:.5em;
-	font-weight: 700;
+nav {
+	background: rgb(239, 142, 98);
+	background: linear-gradient(180deg, rgba(239, 142, 98, 1) 61%, rgba(247, 181, 119, 1) 100%);
+	-webkit-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.34);
+	-moz-box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.34);
+	box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.34);
 }
 
-h1 {
-	font-size:150%;
-	text-transform:uppercase;
+/*** WORKS ***/
+
+.carousel {
+	display: none;
 }
 
-header h1 {
-	font-size:300%;
-	margin-bottom:.1em;
+.card {
+	margin-bottom: 50px;
+	border-radius: 30px;
 }
 
-p {
-	line-height:1.4em;
-	margin-bottom:1em;
+.card img {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
-ul, ol {
-	margin-bottom:1em;
-	list-style-type:disc;
-	padding-left:1.2em;
+.card .btn-primary {
+	background-color: #74D187;
+	border: none;
 }
 
-ol {
-	list-style-type:decimal;
+.card .btn-primary:hover {
+	background-color: #579361;
 }
 
-li {
-	margin-bottom:.5em;
+h5 {
+	color: #000;
+	font-size: 30px;
+	font-weight: 300;
 }
 
-strong {
-	font-weight:600;
-}
-
-a {
-	text-decoration:none;
-	color:#045685;
-}
-
-a:hover {
-	text-decoration:underline;
-}
-
-@media only screen and (max-width: 980px) {
-	
-	#page { width: 100%; }
-	
-}
-
-@media only screen and (max-width: 550px) {
-	
-	#about, #projects {
-		float:none;
-		width:100%;
+@media only screen and (min-width:768px) {
+	.carousel {
+		display: block;
 	}
-	
-}
-	
+	.carousel-item .carousel-caption {
+		position: absolute;
+		top: 0;
+		left: -300px;
+	}
+	.carousel-item .carousel-caption h5 {
+		font-weight: 800;
+	}
+	.carousel-item {
+		position: relative;
+	}
+	.carousel img {
+		max-width: 1200px;
+		margin: auto;
+	}
+	.mobile-works {
+		display: none;
+	}
+	.carousel-control-next, .carousel-control-prev {
+		z-index: 601;
+	}
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+		height: 100px;
+		width: 100px;
+		outline: black;
+		background-size: 100%, 100%;
+		background-image: none;
+	}
+	.carousel-control-next-icon:after {
+		content: '>';
+		font-size: 55px;
+		color: rgb(239, 142, 98);
+	}
+	.carousel-control-prev-icon:after {
+		content: '<';
+		font-size: 55px;
+		color: rgb(239, 142, 98);
+	}
+	h2 {
+		text-align: left;
+	}
 
+	.image-container {
+		position: relative;
+	  }
+	  
+	  .image {
+		opacity: 1;
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	  }
+	  
+	  .middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	  }
+	  
+	  .image-container:hover .image {
+		opacity: 0.3;
+	  }
+	  
+	  .image-container:hover .middle {
+		opacity: 1;
+	  }
+	  
+	  .text a.btn{
+		  background-color:#74D187;
+		  color:#FFF;
+	  }
+
+	  .text a.btn:hover{
+		background:#579361;
+	  }
+}
