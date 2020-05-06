@@ -76,6 +76,23 @@ h5 {
 	font-weight: 300;
 }
 
+/*** ABOUT ***/
+
+.float-container img{
+	height:350px;
+	object-fit:cover;
+	object-position:bottom;
+}
+
+#about img{
+	width:100%;
+}
+
+#about ul{
+	list-style-type: none;
+}
+
+
 @media only screen and (min-width:768px) {
 	.carousel {
 		display: block;
@@ -162,4 +179,16 @@ h5 {
 	  .text a.btn:hover{
 		background:#579361;
 	  }
+
+	  #about img{
+		  width:400px;
+	  }
+
+
+}
+
+@media only screen and (min-width:992px){
+	#about img{
+		width:500px;
+	}
 }
