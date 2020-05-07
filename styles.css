@@ -93,7 +93,6 @@ h5 {
 	list-style-type: none;
 }
 
-<<<<<<< HEAD
 /*** CONTACT ***/
 
 #contact{
@@ -119,8 +118,6 @@ a:hover{
 
 
 
-=======
->>>>>>> 03da079ad272f991f63e94418e103bef69ae0210
 
 @media only screen and (min-width:768px) {
 	.carousel {
@@ -216,14 +213,6 @@ a:hover{
 		  order:2;
 	  }
 
-<<<<<<< HEAD
-=======
-	  #about img{
-		  width:400px;
-	  }
-
-
->>>>>>> 03da079ad272f991f63e94418e103bef69ae0210
 }
 
 @media only screen and (min-width:992px){
